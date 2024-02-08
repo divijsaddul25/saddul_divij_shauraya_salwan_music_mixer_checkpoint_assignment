@@ -1,0 +1,98 @@
+
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+#main-container{
+    display: flex;
+}
+
+
+header {
+    background-color: #4c919d;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000000;
+}
+
+
+main {
+    padding: 20px;
+}
+
+
+footer {
+    background-color: #ed5454;
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+#american football :hover #bg {
+    fill: rgb(56, 119, 144);
+}
+.center-container {
+    display: flex;
+    height: 100vh;
+}
+
+
+ h2 { text-align: center;
+    size: large;
+    color: #ebff11;
+    
+
+}@media only screen and (max-width: 600px) {
+    nav li {
+        display: block;
+        margin-bottom: 10px;
+    }
+} 
+
+#main-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.center-container {
+    background-color: rgb(79, 137, 180);
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    max-width: 250px;
+}
+
+.center-container object {
+    max-width: 100%;
+    height: auto;
+}
+body {
+    background-color: royalblue;
+    background-image: image();
+  }
+
+ 
+  body {
+    background-image: url('rm251-aum-02-g.jpg');
+    background-size: cover; /* This ensures the image covers the entire background */
+    background-position: center; /* This centers the image */
+  }
+  
