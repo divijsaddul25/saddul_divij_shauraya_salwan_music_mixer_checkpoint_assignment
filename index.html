@@ -1,50 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
-    <title> Music mixer</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <link rel="stylesheet" href="css/main.css">
+    <title> Saddul_Divij_Shauraya_Salwan_RetroWave_Music_Mixer</title>
 </head>
+
 <body>
-    <header>
-        <h1>Music mixer</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-            </ul>
-        </nav>
-    </header>
+ <main>
+        </section>
 
-    <main>
-        <h2>DRAG & DROP THE CASETTE ONTO THE BOOMBOX AND PRESS PLAY</h2>
+        <section id="mainContainer">
 
-    <div id="main-container">
+            <aside id="dropSection">
 
-    <div class="center-container">
-        <object data="images/boombox.svg" type="image/svg+xml" width="250"></object>
-    </div>
+                <div class="dropSection-wrapper">
+                    <div class="drop-zone-container">
+                        <div class="drop-zone">
+                        </div>
+                        <button class="playbutton" id="playbtn1"> <img src="images/play_button.png" alt="" id="playButton1"> </button>
+                    </div>
 
+                    <div class="drop-zone-container">
+                        <div class="drop-zone"></div>
+                        <button class="playbutton" id="playbtn2"> <img src="images/play_button.png" id="playButton2" alt="playButton2"> </button>
+                    </div>
 
-    <div class="center-container">
-        <object data="images/casette.svg" type="image/svg+xml" width="250"></object>
+                    <div class="drop-zone-container">
+                        <div class="drop-zone"></div>
+                        <button class="playbutton" id="playbtn3"> <img src="images/play_button.png" id="playButton3" alt="playButton3"> </button>
+                    </div>
 
-    </div>
+                </div>
+   
+            </aside>
 
-    <div class="center-container">
-        <object data="images/disc.svg" type="image/svg+xml"width="250"></object>
-        </div>
+            <section id="mixerContainer">
+                
 
-    <div class="center-container">
-        <object data="images/turntable.svg" type="image/svg+xml" width="250"></object>
-    </div>
-</div>
-</main>
+                <img data-target="casette1" class="hidden" id="casette" src="images/casette.svg" alt="casette1">
 
-<footer>
-<p>&copy; Credit goes to shauraya salwan and divij saddul</p>
-    </footer>
-    <script src="js/main.js"></script>
+                <img data-target="casette2" class="hidden" id="casette2" src="images/casette.svg" alt="casette2">
+
+                <img data-target="casette3" class="hidden" id="casette3" src="images/casette.svg" alt="casette3">
+
+                <img data-target="casette4" class="hidden" id="casette4" src="images/casette.svg" alt="casette4">
+
+                <img data-target="casette5" class="hidden" id="casette5" src="images/casette.svg" alt="casette5">
+
+            </section>
+
+        </section>
+      
+
+        <div id="iconContainer">
+            <img data-key="01" data-target="casette" id="icon1" src="images/casette.svg" alt="casette-piece">
+            <img data-key="02" data-target="casette2" id="icon2" src="images/casette.svg" alt="casette-piece">
+            <img data-key="03" data-target="casette3" id="icon3" src="images/casette.svg" alt="casette-piece">
+            <img data-key="04" data-target="casette4" id="icon4" src="images/casette.svg" alt="casette-piece">
+         </div>
+
+        <audio data-key="01" src="audio/hi_hat_sample.wav"></audio>
+        <audio data-key="02" src="audio/kick_sample.wav"></audio>
+        <audio data-key="03" src="audio/melody_2.wav"></audio>
+        <audio data-key="04" src="audio/melody_sample.wav"></audio>
+
+    </main>
+
+    
+    <script src="/js/function.js"></script>
 </body>
+
 </html>
